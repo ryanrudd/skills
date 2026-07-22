@@ -28,7 +28,7 @@ Clone this repo and copy (or symlink) a skill folder into your skills directory:
 
 | Skill | Description |
 | --- | --- |
-| _none yet_ | |
+| [asd-ste100](skills/asd-ste100/SKILL.md) | Write reader-facing technical content (Linear issues, docs, change summaries) in Simplified Technical English, stripped of conversation-local context. |
 
 ## Skill layout
 

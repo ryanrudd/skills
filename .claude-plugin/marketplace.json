@@ -5,5 +5,14 @@
     "name": "Ryan Rudd",
     "email": "ryan@timberwood.io"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "asd-ste100",
+      "source": "./skills/asd-ste100",
+      "description": "Write reader-facing technical content (Linear issues, docs, change summaries) in Simplified Technical English, stripped of conversation-local context.",
+      "author": {
+        "name": "Ryan Rudd"
+      }
+    }
+  ]
 }
