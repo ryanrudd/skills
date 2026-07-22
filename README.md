@@ -1,14 +1,12 @@
 # skills
 
-A collection of [Agent Skills](https://agentskills.io) for [Claude Code](https://code.claude.com), authored by Ryan Rudd.
+A collection of skills for AI agents, authored by Ryan Rudd.
 
-Each skill lives in `skills/<skill-name>/` with a `SKILL.md` describing what it does and when Claude should use it, plus any supporting scripts or reference files.
+Skills are portable packages of instructions that extend what an agent can do, following the open [Agent Skills](https://agentskills.io) standard. Each skill lives in `skills/<skill-name>/` with a `SKILL.md` describing what it does and when an agent should use it, plus any supporting scripts or reference files. Any agent that supports the standard can use them.
 
 ## Installing
 
-### Via the plugin marketplace (recommended)
-
-In Claude Code:
+### Claude Code, via the plugin marketplace
 
 ```
 /plugin marketplace add ryanrudd/skills
@@ -17,12 +15,14 @@ In Claude Code:
 
 To pick up new releases later: `/plugin marketplace update ryanrudd-skills`
 
-### Manual install
+### Manual install (any agent)
 
-Clone this repo and copy (or symlink) a skill folder into your skills directory:
+Clone this repo and copy (or symlink) a skill folder into wherever your agent discovers skills. For Claude Code:
 
 - **Personal** (all your projects): `~/.claude/skills/<skill-name>/`
 - **Project** (checked into a repo): `.claude/skills/<skill-name>/`
+
+For other agents, see your agent's documentation for its skills directory.
 
 ## Available skills
 
@@ -43,7 +43,7 @@ skills/<skill-name>/
 Conventions used in this repo:
 
 - Skill names are kebab-case and match their directory name.
-- `description` frontmatter says both what the skill does **and** when to use it — that's what Claude reads to decide whether to invoke it.
+- `description` frontmatter says both what the skill does **and** when to use it — that's what the agent reads to decide whether to invoke it.
 - `SKILL.md` stays under ~500 lines; anything bigger moves to reference files.
 - Each new skill gets an entry in `.claude-plugin/marketplace.json` and in the table above.
 
